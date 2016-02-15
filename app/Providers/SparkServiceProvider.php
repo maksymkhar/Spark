@@ -145,19 +145,19 @@ class SparkServiceProvider extends ServiceProvider
      */
     protected function customizeSubscriptionPlans()
     {
-        // Spark::free()
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+         Spark::free()
+                 ->features([
+                     'Feature 1',
+                     'Feature 2',
+                     'Feature 3',
+                 ]);
 
-        // Spark::plan('Basic', 'stripe-id')->price(10)
-        //         ->trialDays(7)
-        //         ->features([
-        //             'Feature 1',
-        //             'Feature 2',
-        //             'Feature 3',
-        //         ]);
+         Spark::plan('Plan 1', 'plan_1')->price(5.99)
+                 ->trialDays(7)
+                 ->features([
+                     'Feature 1',
+                     'Feature 2',
+                     'Feature 3',
+                 ]);
     }
 }
